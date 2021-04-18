@@ -7,10 +7,12 @@ layout: default
 
 # [About Me](/about)
 
+# Blog Posts
+
 <div class="home">
 
 
-# Blog Posts
+
     {% assign posts = site.posts %}
 
 
