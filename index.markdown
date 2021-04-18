@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<h1>Update</h1>
+# Update
 * <b>2021-4-17:</b> Welcome to my new website!
 
-<h1>[About Me](/about)</h1>
+# [About Me](/about)
 
 <div class="home">
 
 
-<h1>Blog Posts</h1>
+# Blog Posts
     {% assign posts = site.posts %}
 
 
