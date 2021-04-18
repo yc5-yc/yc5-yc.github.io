@@ -3,9 +3,13 @@ layout: default
 ---
 
 
+
+<div class="home">
 <h1>Update</h1>
 * <b>2021-4-17:</b> Welcome to my new website!
-<div class="home">
+
+<h1>[About Me](/about)</h1>
+
 <h1>Blog Posts</h1>
     {% assign posts = site.posts %}
 
