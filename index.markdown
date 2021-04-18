@@ -1,8 +1,9 @@
 ---
 layout: default
+title: Home
 ---
 
-# Update
+# Updates
 * <b>2021-4-17:</b> Welcome to my new website!
 
 # [About Me](/about)
