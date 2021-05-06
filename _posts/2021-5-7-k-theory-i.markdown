@@ -24,7 +24,7 @@ $\newcommand{\K}{\mathrm{K}}
 \newcommand{\Fun}{\mathrm{Fun}}$
 </div>
 
-This series of blog posts are my notes on Mao Zhouhang's thesis about various constructions of algebraic K-theory, mainly the $\infty$-categorical ones.
+This series of blog posts are my notes on Mao Zhouhang's [thesis](https://webusers.imj-prg.fr/~zhouhang.mao/M2_memoire.pdf) about various constructions of algebraic K-theory, mainly the $\infty$-categorical ones.
 
 The $\K_0$-group of a ring $R$ is also called the Grothendieck group, it aims to classify finitely generated projective modules over $R$. There are two ways to obtain this group, both build on the isomorphism classes of finitely generated projective $R$-modules: one is by taking the group completion of the abelian monoid obtained from direct sum operation, the other is the underlying free abelian group modulo the relation given by short exact sequences.
 
@@ -44,9 +44,9 @@ Let $\cC$ be an $\infty$-category with cofibrations, then $\K_0(\cC)$ is the abe
 
 We shall define the K-theory space as the loop space of certain construction: $\K(\cC)=\Omega L$ with relation $\pi_0\K(\cC)=\pi_1(L)=\K_0(\cC)$ and every $X\in \cC$ gives a loop $[X]\in\Omega L$. The construction $L$ is called Waldhausen's $S_\bullet$-construction, with technicalities in $\infty$-category sense carried out by Barwick.
 
-We shall not go into the technical details of Barwick's paper here. Instead, we give the explicit construction by Waldhausen.
+We shall not go into the technical details of [Barwick's paper](https://arxiv.org/pdf/1204.3607.pdf) here. Instead, we give the explicit construction by Waldhausen.
 
-\section*{Waldhausen's construction}
+# Waldhausen's construction
 Giving a partially ordered set $P$, we have $P^{(2)}=\{(i,j)\in P\times P|i\leq j\}$. For an $\infty$-category $\cC$ with cofibrations, we define the $P$-gapped object of $\cC$ as a functor $X:N(P^{(2)})\to \cC$, such that $X(i,i)=*$ and for any $i\leq j\leq k$ in $P$, $X(i,j)\to X(i,k)$ is a cofibration, with the triangle $X(i,j)\to X(i,k) \to X(j,k)$ as a pushout square. Denote $\mathrm{Gap}_P(\cC)$ as the full subcategory of $\Fun(N(P^{(2)}),\cC)$ spanned by $P$-gapped objects.
 
 We then give the construction $S_n(\cC)=\mathrm{Gap}_{[n]}(\cC)^\simeq$, where $(-)^\simeq$ means the subcategory spanned by all objects and all equivalences. Notice that Barwick's construction is necessary in order to give an universal characterization of algebraic $K$-theory, for details please look at Barwick's paper.
