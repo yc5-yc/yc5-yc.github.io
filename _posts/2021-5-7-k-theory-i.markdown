@@ -11,7 +11,8 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLor
 <div style="display:none">
 $$\newcommand{\K}{\mathrm{K}}
 \newcommand{\cC}{\mathcal{C}}
-\newcommand{\Fun}{\mathrm{Fun}}$$
+\newcommand{\Fun}{\mathrm{Fun}}
+\renewcommand{\|}{|}$$
 </div>
 
 This series of blog posts are my notes on Mao Zhouhang's [thesis](https://webusers.imj-prg.fr/~zhouhang.mao/M2_memoire.pdf) about various constructions of algebraic K-theory, mainly the $$\infty$$-categorical ones.
@@ -44,4 +45,4 @@ We then give the construction $$S_n(\cC)=\mathrm{Gap}_{[n]}(\cC)^\simeq$$, where
 # K-theory space
 $$\K(\cC)$$ is the loop space of the geometric realization of $$S(\cC)$$: $$\Omega |S_\bullet(\cC)|$$. To conclude this post, we try to give the proof of $$\pi_0(\K(\cC))=\K_0(\cC)$$.
 
-Notice that $$\pi_0(\K(\cC))=\pi_1 | \mathrm{Gap}_{[\bullet]}(\cC)^\simeq | $$. We only need to analysis $$\mathrm{Gap}_{[m]}(\cC)^\simeq$$ for $$m\leq 2$$: $$\mathrm{Gap}_{[0]}(\cC)^\simeq$$ is singleton, $$\mathrm{Gap}_{[1]}(\cC)^\simeq$$ gives objects $$X\in \cC$$, and the diagram of $$\mathrm{Gap}_{[2]}(\cC)^\simeq$$ gives cofiber sequences $$X'\to X\to X''$$ which are 2-cells like $$[X]\simeq [X']+[X'']$$.
+Notice that $$\pi_0(\K(\cC))=\pi_1 \| \mathrm{Gap}_{[\bullet]}(\cC)^\simeq \| $$. We only need to analysis $$\mathrm{Gap}_{[m]}(\cC)^\simeq$$ for $$m\leq 2$$: $$\mathrm{Gap}_{[0]}(\cC)^\simeq$$ is singleton, $$\mathrm{Gap}_{[1]}(\cC)^\simeq$$ gives objects $$X\in \cC$$, and the diagram of $$\mathrm{Gap}_{[2]}(\cC)^\simeq$$ gives cofiber sequences $$X'\to X\to X''$$ which are 2-cells like $$[X]\simeq [X']+[X'']$$.
