@@ -47,11 +47,11 @@ We shall define the K-theory space as the loop space of certain construction: $\
 We shall not go into the technical details of [Barwick's paper](https://arxiv.org/pdf/1204.3607.pdf) here. Instead, we give the explicit construction by Waldhausen.
 
 # Waldhausen's construction
-Giving a partially ordered set $P$, we have $P^{(2)}=\{(i,j)\in P\times P|i\leq j\}$. For an $\infty$-category $\cC$ with cofibrations, we define the $P$-gapped object of $\cC$ as a functor $X:N(P^{(2)})\to \cC$, such that $X(i,i)=*$ and for any $i\leq j\leq k$ in $P$, $X(i,j)\to X(i,k)$ is a cofibration, with the triangle $X(i,j)\to X(i,k) \to X(j,k)$ as a pushout square. Denote $\mathrm{Gap}_P(\cC)$ as the full subcategory of $\Fun(N(P^{(2)}),\cC)$ spanned by $P$-gapped objects.
+Giving a partially ordered set $P$, we have $P^{(2)}=\{ (i,j)\in P\times P | i\leq j\} $. For an $\infty$-category $\cC$ with cofibrations, we define the $P$-gapped object of $\cC$ as a functor $X:N(P^{(2)})\to \cC$, such that $X(i,i)=*$ and for any $i\leq j\leq k$ in $P$, $X(i,j)\to X(i,k)$ is a cofibration, with the triangle $X(i,j)\to X(i,k) \to X(j,k)$ as a pushout square. Denote $\mathrm{Gap}_P(\cC)$ as the full subcategory of $\Fun(N(P^{(2)}),\cC)$ spanned by $P$-gapped objects.
 
 We then give the construction $S_n(\cC)=\mathrm{Gap}_{[n]}(\cC)^\simeq$, where $(-)^\simeq$ means the subcategory spanned by all objects and all equivalences. Notice that Barwick's construction is necessary in order to give an universal characterization of algebraic $K$-theory, for details please look at Barwick's paper.
 
 # K-theory space
 $\K(\cC)$ is the loop space of the geometric realization of $S(\cC)$: $\Omega |S_\bullet(\cC)|$. To conclude this post, we try to give the proof of $\pi_0(\K(\cC))=\K_0(\cC)$.
 
-Notice that $\pi_0(\K(\cC))=\pi_1|\mathrm{Gap}_{[\bullet]}(\cC)^\simeq|$. We only need to analysis $\mathrm{Gap}_{[m]}(\cC)^\simeq$ for $m\leq 2$: $\mathrm{Gap}_{[0]}(\cC)^\simeq$ is singleton, $\mathrm{Gap}_{[1]}(\cC)^\simeq$ gives objects $X\in \cC$, and the diagram of $\mathrm{Gap}_{[2]}(\cC)^\simeq$ gives cofiber sequences $X'\to X\to X''$ which are 2-cells like $[X]\simeq [X']+[X'']$.
+Notice that $\pi_0(\K(\cC))=\pi_1 | \mathrm{Gap}_{[\bullet]}(\cC)^\simeq | $. We only need to analysis $\mathrm{Gap}_{[m]}(\cC)^\simeq$ for $m\leq 2$: $\mathrm{Gap}_{[0]}(\cC)^\simeq$ is singleton, $\mathrm{Gap}_{[1]}(\cC)^\simeq$ gives objects $X\in \cC$, and the diagram of $\mathrm{Gap}_{[2]}(\cC)^\simeq$ gives cofiber sequences $X'\to X\to X''$ which are 2-cells like $[X]\simeq [X']+[X'']$.
