@@ -46,5 +46,3 @@ title: Home
 
 </div>
 
-<!-- https://q.uiver.app/?q=WzAsMyxbMCwwLCJYIl0sWzEsMCwiWSJdLFswLDEsIlciXSxbMCwxLCJmJyJdLFswLDIsImcnIiwyXV0= -->
-<iframe class="quiver-embed" src="https://q.uiver.app/?q=WzAsMyxbMCwwLCJYIl0sWzEsMCwiWSJdLFswLDEsIlciXSxbMCwxLCJmJyJdLFswLDIsImcnIiwyXV0=&embed" width="304" height="304" style="border-radius: 8px; border: none;"></iframe>
