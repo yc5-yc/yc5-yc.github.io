@@ -4,6 +4,13 @@ title:  "Basics of algebraic K-theory, part II"
 date:   2021-05-09
 ---
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "AMScd.js"]
+      },
+    });
+</script>
 <script type="text/javascript"
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
@@ -34,7 +41,6 @@ Now we list some consequences: an $$\infty$$-category is additive iff its homoto
 An exact $$\infty$$-category $$\cC$$ is an additive $$\infty$$-category with collections of cofibrations and fibrations such that both $$\cC$$ with cofibrations and $$\cC^{op}$$ with fibrations are $$\infty$$-category with cofibrations, and in the following square with $$f,f'$$ cofibrations and $$g,g'$$ fibrations, it's a pushout square iff it's a pullback square, we call this square ambigressive:
 
 $$
-\require{amscd}
 \begin{CD}
     X@>f>> Y\\
         @VgVV @VVg'V\\
@@ -45,7 +51,6 @@ $$
 An exact sequence in an exact category is defined by an ambigressive square:
 
 $$
-\require{amscd}
 \begin{CD}
     X'@>i>> X\\
         @VVV @VVpV\\
