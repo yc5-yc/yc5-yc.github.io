@@ -57,6 +57,7 @@ $$
         * @>>> X''
 \end{CD}
 $$
+
 where $$p$$ is called the cofiber and $$i$$ is called the fiber.
 
 We also record the fact that if $$(\cC,\Sigma)$$ is an exact category, then $$N(\cC)$$ is an exact $$\infty$$-category if we see inflations as cofibrations and deflations as fibrations. Conversely, if $$N(\cC)$$ is exact and we let $$\Sigma$$ as all exact sequences in $$N(\cC)$$, then $$(\cC,\Sigma)$$ is exact.
