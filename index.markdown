@@ -4,6 +4,7 @@ title: Home
 ---
 
 # Updates
+* <b>2021-5-7:</b> [Second post](https://yc5-yc.github.io/2021/05/09/k-theory-ii.html) of the series is coming out!
 * <b>2021-5-7:</b> New post! [What is algebraic K-theory?](https://yc5-yc.github.io/2021/05/07/k-theory-i.html)
 * <b>2021-4-17:</b> Welcome to my new website!
 
