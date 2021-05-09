@@ -3,6 +3,16 @@ layout: default
 title: Home
 ---
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45385956-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  gtag('config', 'UA-45385956-1');
+  </script>
+
 # Updates
 * <b>2021-5-9:</b> [Second post](https://yc5-yc.github.io/2021/05/09/k-theory-ii.html) of the series is coming out!
 * <b>2021-5-7:</b> New post! [What is algebraic K-theory?](https://yc5-yc.github.io/2021/05/07/k-theory-i.html)
