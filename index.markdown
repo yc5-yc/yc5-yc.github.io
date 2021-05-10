@@ -57,3 +57,9 @@ title: Home
 
 </div>
 
+# See Also
+
+* [Andy Yuanning Zhang](https://math.wikinana.org/andy/start)
+* [K-theory Blog](https://antieau.github.io/blog.html)
+* [Sanath Devalapurkar](https://sanathdevalapurkar.github.io/blog/)
+
