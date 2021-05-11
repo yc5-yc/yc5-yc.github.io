@@ -28,7 +28,7 @@ $$
 $$
 </div>
 
-In this post we will discuss the structure different from previous two posts, namely the "direct sum structure". Recall that our category with direct sum operation forms an abelian monoid, we will realize this as an $$\mathbb{E}_\infty$$-monoid, and construct the group completion functor of it following Gepner-Groth-Nikolaus ([GGN]). This gives the definition of additive K-theory space. To conclude the whole series, we will say some words on Lurie's comparison theorem of K-theory spaces constructed from the two different structures.
+In this post we will discuss the structure different from previous two posts, namely the "direct sum structure". Recall that our category with direct sum operation forms an abelian monoid, we will realize this as an $$\mathbb{E}_\infty$$-monoid, and construct the group completion functor of it following [Gepner-Groth-Nikolaus](https://arxiv.org/pdf/1305.4550.pdf) ([GGN]). This gives the definition of additive K-theory space. To conclude the whole series, we will say some words on [Lurie's comparison theorem](https://www.math.ias.edu/~lurie/281notes/Lecture18-Additive.pdf) of K-theory spaces constructed from the two different structures.
 
 # $$\mathbb{E}_\infty$$-monoid and its group completion
 For an $$\infty$$-category $$\cC$$ with finite products, an $$\mathbb{E}_\infty$$-monoid $$M$$ in $$\cC$$ is a functor $$M:N(\Fin_*)\to\cC$$ such that for $$n\geq 0$$, the morphism $$M(\langle n\rangle)\to M(\langle 1\rangle)$$ induced by inert maps makes $$M(\langle n\rangle)$$ as $$n$$-fold power of $$M(\langle 1\rangle)$$. $$\Mon_{\mathbb{E}_\infty}(\cC)$$ is the full subcategory of $$\Fun(N(\Fin_*),\cC)$$ spanned by $$\mathbb{E}_\infty$$-monoids.
@@ -55,7 +55,7 @@ Let $$\cC$$ be an $$\infty$$-category with finite coproducts, then consider its 
 The additive K-theory space $$\K_{add}(\cC)$$ is defined as the underlying space of $$(\cC^\simeq)^{gp}$$.
 
 # Lurie's comparison theorem
-We now write something about the proof of Theorem 10 in Lurie's  lecture.
+We now write something about the proof of Theorem 10 in [Lurie's  lecture](https://www.math.ias.edu/~lurie/281notes/Lecture18-Additive.pdf).
 
 Let $$\cC$$ be an additive $$\infty$$-category, then since it admits finite coproducts, it is also an $$\infty$$-category with cofibrations. Then we have a canonical homotopy equivalence $$\K_{add}(\cC)\to \K(\cC)$$.
 
