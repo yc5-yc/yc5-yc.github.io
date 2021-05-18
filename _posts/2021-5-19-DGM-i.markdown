@@ -56,9 +56,12 @@ The goal of this series of posts is to give an exposition on the proof of the Du
 **Dundas-Goodwillie-McCarthy theorem:** Consider a morphism $B\to A$ of $\mathbb{E}_1$-ring spectra such that $\pi_0(B)\to\pi_0(A)$ is surjective with nilpotent kernel, then the cyclotomic trace induces an equivalence of spectra $\Ker(\K(B)\to\K(A))\to\Ker(\TC(B)\to\TC(A))$.
 
 In first posts of this series we shall try to deduce this theorem in split square-zero case, that is, given the functor
+
 $$\Psi^{DGM}: \Alg_{conn}\to\Sp$$
+
 $$A\mapsto \Coker(\K(A)\to\TC(A))$$
-we show $\Psi^{DGM}(A\oplus M)\xrightarrow{\sim}\Psi^{DGM}(A)$ for any $M\in A-\bimod^{\leq 0}$. For notations involved, let $\Alg$ be $\infty$-category of $\mathbb{E}_1$-algebras and $\Alg_{conn}$ be $\infty$-category of connective $\mathbb{E}_1$-algebras.
+
+we show $\Psi^{DGM}(A\oplus M)\xrightarrow{\sim}\Psi^{DGM}(A)$ for any $M\in A-\bimod^{\leq 0}$. For notations involved, let $\Alg$ be $\infty$-category of $ \mathbb{E}_1 $-algebras and $\Alg_{conn}$ be $\infty$-category of connective $ \mathbb{E}_1 $-algebras.
 
 The proof of this case itself requires some subtle propositions of functors K and TC. We don't consider them for now. In this post, we use Goodwillie calculus to establish a framework of proving the split square-zero case.
 
@@ -67,14 +70,17 @@ Let $\psi:\cC\to\cD$ be a functor between cocomplete (i.e. presentable) stable $
 
 We will write $\StCat_{cont}$ as the $\infty$-category of cocomplete stable $\infty$-categories under continuous exact functors.
 
-We now give a more general construction of the Goodwillie derivative. Assume in addition that $\cC$ is equipped with a $t$-structure compatible with filtered colimits. Given $\psi:\cC^{\leq 0}\to\cD$ commuting with sifted colimits, then there is a functor $\partial\psi:\cC\to\cD$ in $\StCat_{cont}$ initial among functors commuting with colimits and receiving a natural transformation $\psi\to(\partial\psi)\|_{\cC^{\leq 0}}$. Proposition 1.4.2.13 of Lurie's HA gives an explicit calculation that $\partial\psi(\cF)=\colim_m\colim_{n\geq m}\Omega^n\psi_{red}(\Sigma^n\tau^{\leq m}\cF)$ where $\psi_{red}$ is reduced (i.e. takes 0 to 0) such that $\psi(\cF)=\psi_{red}(\cF)\oplus\psi(0)$. 
+We now give a more general construction of the Goodwillie derivative. Assume in addition that $\cC$ is equipped with a $t$-structure compatible with filtered colimits. Given $\psi:\cC^{\leq 0}\to\cD$ commuting with sifted colimits, then there is a functor $\partial\psi:\cC\to\cD$ in $\StCat_{cont}$ initial among functors commuting with colimits and receiving a natural transformation $ \psi\to(\partial\psi)\|_{\cC^{\leq 0}} $. Proposition 1.4.2.13 of Lurie's HA gives an explicit calculation that $ \partial\psi(\cF)=\colim_m\colim_{n\geq m}\Omega^n\psi_{red}(\Sigma^n\tau^{\leq m}\cF) $ where $ \psi_{red} $ is reduced (i.e. takes 0 to 0) such that $ \psi(\cF)=\psi_{red}(\cF)\oplus\psi(0) $. 
 
 For $A\in \Alg$ and $M\in A-\bimod$, the split square-zero extension $\SqZero(A,M)\in\Alg$ has the underlying spectrum $A\oplus M$.
 
 # Main theorem, v1
 We are now able to state the (first version) main theorem of this post. Given a functor $\Psi:\Alg_{conn}\to\Sp$. Suppose that for any $A\in\Alg_{conn}$, the functor
+
 $$\Psi_A:A-\bimod^{\leq 0}\to \Sp$$
+
 $$ M\mapsto\Psi(\SqZero(A,M))$$
+
 commutes with sifted colimits and has vanishing Goodwillie derivative. Also suppose that $\Psi_{A,red}$ maps $A-\bimod^{\leq 0}$ to $\Sp^{\leq 0}$. Then for any $A\in\Alg_{conn}$ and $M\in A-\bimod^{\leq -1}$, we have $\Psi(\SqZero(A,M))\to \Psi(A)$ is an isomorphism.
 
 Moreover, we state a categorical variant which implies the main theorem. Assume $\cC$ and $\cD$ are cocomplete stable $\infty$-categories with $t$-structure compatible with filtered colimits, and $t$-structure on $\cD$ is left separated (i.e. $\bigcap_{n\in\mathbb{Z}}\cD_{\geq n}=0$). Given a functor $\psi:\cC^{\leq 0}\to \cD^{\leq 0}$ which is reduced and commutes with sifted colimits and satisfies $\partial(\psi(\cF\oplus -))=0$ ($\psi(\cF\oplus -)$ seen as a functor) for any $\cF\in \cC^{\leq -1}$. Then for any $\cF\in\cC^{\leq -1}$ we have $\psi(\cF)=0$.
