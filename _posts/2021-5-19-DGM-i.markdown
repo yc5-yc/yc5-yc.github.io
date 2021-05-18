@@ -61,7 +61,7 @@ $$\Psi^{DGM}: \Alg_{conn}\to\Sp$$
 
 $$A\mapsto \Coker(\K(A)\to\TC(A))$$
 
-we show $\Psi^{DGM}(A\oplus M)\xrightarrow{\sim}\Psi^{DGM}(A)$ for any $M\in A-\bimod^{\leq 0}$. For notations involved, let $\Alg$ be $\infty$-category of $ \mathbb{E}_1 $-algebras and $\Alg_{conn}$ be $\infty$-category of connective $ \mathbb{E}_1 $-algebras.
+we show $\Psi^{DGM}(A\oplus M)\xrightarrow{\sim}\Psi^{DGM}(A)$ for any $M\in A-\bimod^{\leq 0}$. For notations involved, let $\Alg$ be $\infty$-category of $$\mathbb{E}_1$$-algebras and $\Alg_{conn}$ be $\infty$-category of connective $$\mathbb{E}_1$$-algebras.
 
 The proof of this case itself requires some subtle propositions of functors K and TC. We don't consider them for now. In this post, we use Goodwillie calculus to establish a framework of proving the split square-zero case.
 
@@ -70,7 +70,7 @@ Let $\psi:\cC\to\cD$ be a functor between cocomplete (i.e. presentable) stable $
 
 We will write $\StCat_{cont}$ as the $\infty$-category of cocomplete stable $\infty$-categories under continuous exact functors.
 
-We now give a more general construction of the Goodwillie derivative. Assume in addition that $\cC$ is equipped with a $t$-structure compatible with filtered colimits. Given $\psi:\cC^{\leq 0}\to\cD$ commuting with sifted colimits, then there is a functor $\partial\psi:\cC\to\cD$ in $\StCat_{cont}$ initial among functors commuting with colimits and receiving a natural transformation $ \psi\to(\partial\psi)\|_{\cC^{\leq 0}} $. Proposition 1.4.2.13 of Lurie's HA gives an explicit calculation that $ \partial\psi(\cF)=\colim_m\colim_{n\geq m}\Omega^n\psi_{red}(\Sigma^n\tau^{\leq m}\cF) $ where $ \psi_{red} $ is reduced (i.e. takes 0 to 0) such that $ \psi(\cF)=\psi_{red}(\cF)\oplus\psi(0) $. 
+We now give a more general construction of the Goodwillie derivative. Assume in addition that $\cC$ is equipped with a $t$-structure compatible with filtered colimits. Given $\psi:\cC^{\leq 0}\to\cD$ commuting with sifted colimits, then there is a functor $\partial\psi:\cC\to\cD$ in $\StCat_{cont}$ initial among functors commuting with colimits and receiving a natural transformation $$\psi\to(\partial\psi)\|_{\cC^{\leq 0}}$$. Proposition 1.4.2.13 of Lurie's HA gives an explicit calculation that $$\partial\psi(\cF)=\colim_m\colim_{n\geq m}\Omega^n\psi_{red}(\Sigma^n\tau^{\leq m}\cF)$$ where $$\psi_{red}$$ is reduced (i.e. takes 0 to 0) such that $$\psi(\cF)=\psi_{red}(\cF)\oplus\psi(0)$$. 
 
 For $A\in \Alg$ and $M\in A-\bimod$, the split square-zero extension $\SqZero(A,M)\in\Alg$ has the underlying spectrum $A\oplus M$.
 
