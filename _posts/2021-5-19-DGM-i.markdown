@@ -1,0 +1,101 @@
+---
+layout: post
+title:  "Dundas-Goodwillie-McCarthy I: Goodwillie calculus"
+date:   2021-05-19
+---
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      },
+      TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "AMScd.js"]
+      },
+      displayAlign: "center",
+      displayIndent: "2em",
+    });
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<div style="display:none">
+
+</div>
+
+**Reference:** [On the Dundas-Goodwillie-McCarthy theorem](https://arxiv.org/pdf/1807.06709.pdf) by Sam Raskin
+
+# Overview
+The goal of this series of posts is to give an exposition on the proof of the Dundas-Goodwillie-McCarthy theorem, the theorem is stated as:
+
+**Dundas-Goodwillie-McCarthy theorem:** Consider a morphism $B\to A$ of $\mathbb{E}_1$-ring spectra such that $\pi_0(B)\to\pi_0(A)$ is surjective with nilpotent kernel, then the cyclotomic trace induces an equivalence of spectra $\Ker(\K(B)\to\K(A))\to\Ker(\TC(B)\to\TC(A))$.
+
+In first posts of this series we shall try to deduce this theorem in split square-zero case, that is, given the functor
+$$\Psi^{DGM}: \Alg_{conn}\to\Sp$$
+$$A\mapsto \Coker(\K(A)\to\TC(A))$$
+we show $\Psi^{DGM}(A\oplus M)\xrightarrow{\sim}\Psi^{DGM}(A)$ for any $M\in A-\bimod^{\leq 0}$. For notations involved, let $\Alg$ be $\infty$-category of $\mathbb{E}_1$-algebras and $\Alg_{conn}$ be $\infty$-category of connective $\mathbb{E}_1$-algebras.
+
+The proof of this case itself requires some subtle propositions of functors K and TC. We don't consider them for now. In this post, we use Goodwillie calculus to establish a framework of proving the split square-zero case.
+
+# Goodwillie derivative
+Let $\psi:\cC\to\cD$ be a functor between cocomplete (i.e. presentable) stable $\infty$-categories commuting with sifted colimits. Then the Goodwillie derivative $\partial\psi$ is defined as initial among continuous exact functors (i.e. commuting with all colimits) receiving a natural transformation from $\psi$. 
+
+We will write $\StCat_{cont}$ as the $\infty$-category of cocomplete stable $\infty$-categories under continuous exact functors.
+
+We now give a more general construction of the Goodwillie derivative. Assume in addition that $\cC$ is equipped with a $t$-structure compatible with filtered colimits. Given $\psi:\cC^{\leq 0}\to\cD$ commuting with sifted colimits, then there is a functor $\partial\psi:\cC\to\cD$ in $\StCat_{cont}$ initial among functors commuting with colimits and receiving a natural transformation $\psi\to(\partial\psi)\|_{\cC^{\leq 0}}$. Proposition 1.4.2.13 of Lurie's HA gives an explicit calculation that $\partial\psi(\cF)=\colim_m\colim_{n\geq m}\Omega^n\psi_{red}(\Sigma^n\tau^{\leq m}\cF)$ where $\psi_{red}$ is reduced (i.e. takes 0 to 0) such that $\psi(\cF)=\psi_{red}(\cF)\oplus\psi(0)$. 
+
+For $A\in \Alg$ and $M\in A-\bimod$, the split square-zero extension $\SqZero(A,M)\in\Alg$ has the underlying spectrum $A\oplus M$.
+
+# Main theorem, v1
+We are now able to state the (first version) main theorem of this post. Given a functor $\Psi:\Alg_{conn}\to\Sp$. Suppose that for any $A\in\Alg_{conn}$, the functor
+$$\Psi_A:A-\bimod^{\leq 0}\to \Sp$$
+$$ M\mapsto\Psi(\SqZero(A,M))$$
+commutes with sifted colimits and has vanishing Goodwillie derivative. Also suppose that $\Psi_{A,red}$ maps $A-\bimod^{\leq 0}$ to $\Sp^{\leq 0}$. Then for any $A\in\Alg_{conn}$ and $M\in A-\bimod^{\leq -1}$, we have $\Psi(\SqZero(A,M))\to \Psi(A)$ is an isomorphism.
+
+Moreover, we state a categorical variant which implies the main theorem. Assume $\cC$ and $\cD$ are cocomplete stable $\infty$-categories with $t$-structure compatible with filtered colimits, and $t$-structure on $\cD$ is left separated (i.e. $\bigcap_{n\in\mathbb{Z}}\cD_{\geq n}=0$). Given a functor $\psi:\cC^{\leq 0}\to \cD^{\leq 0}$ which is reduced and commutes with sifted colimits and satisfies $\partial(\psi(\cF\oplus -))=0$ ($\psi(\cF\oplus -)$ seen as a functor) for any $\cF\in \cC^{\leq -1}$. Then for any $\cF\in\cC^{\leq -1}$ we have $\psi(\cF)=0$.
+
+# Main lemma
+Given $\psi:\cC^{\leq 0}\to \cD$ commuting with sifted colimits. Then for any $\cF\in\cC^{\leq 0}$, $\psi(\Sigma \cF)$ admits an increasing filtration $\fil_\bullet\psi(\Sigma \cF)$ such that:
+
+* For $i<0$, $\fil_i\psi(\Sigma \cF)=0$
+
+* For $i\geq 0$, $\gr_i\psi(\Sigma \cF)$ is a direct summand of $\psi(\cF^{\oplus i})[i]$
+
+* One can calculate that $\gr_0\psi(\Sigma\cF)=\psi(0)$, $\gr_1\psi(\Sigma\cF)=\psi_{red}(\cF)[1]$, $\gr_2\psi(\Sigma\cF)=B_{\psi_{red}}(\cF,\cF)[2]$ where $B_\psi(\cF,\cG)=\Coker(\psi(\cF)\oplus\psi(\cG)\to\psi(\cF\oplus\cG))$.
+
+For the proof, first write the geometric realization of $\Sigma\cF$ and use the fact that $\psi$ commutes with geometric realization to see $\psi(\Sigma\cF)=\|\psi(\cF^{\oplus\bullet})\|$. Then define $\fil_i\psi(\Sigma\cF)=\|\psi(\cF^{\oplus\bullet})\|_{\leq i}$. One can use the technique from the proof of Dold-Kan theorem to prove the direct summand part.
+
+Then there is this corollary of the lemma. Suppose $\psi:\cC^{\leq 0}\to\cD^{\leq 0}$ is reduced and commutes with sifted colimits, then for any $n\geq 0$, $\psi(\cC^{\leq -n})\subseteq \cD^{\leq -n}$.
+
+# Proof of main theorem, v1
+We prove the categorical variant of the main theorem, by using induction on $n$ to show $\psi(\cC^{\leq -1})\subseteq\cD^{\leq -n}$.
+
+When $n=1$ this is just the corollary of main lemma. Now assume the inductive hypothesis for $n$.
+
+As the first step one should prove that for any $\cF\in \cC^{\leq -1}$, the functor $B_\psi(\cF,-)[-1]:\cC^{\leq 0}\to\cD$ satisfies the hypotheses for functor $\psi$ in the statement. Then by the induction hypothesis, we have $B_\psi(\cF,-)$ maps $\cC^{\leq -1}$ to $\cD^{\leq -n-1}$.
+
+The second step is to deduce $\Coker(\Sigma\psi(\cF)\to\psi(\Sigma\cF))\in \cD^{\leq -n-3}$ from the main lemma and the induction hypothesis and the previous step.
+
+The final step is to deduce that for $\cF\in\cC^{\leq -1}$, $\psi(\cF)\to\Omega\psi(\Sigma\cF)$ is an isomorphism on $H^{-n}$ (the cohomology functor for the $t$-structure on $\cD$, that is, $H^n=\tau^{\leq 0}\circ\tau^{\geq 0}\circ[n]$). Moreover, for $m\geq 0$, $\Omega^m\psi\Sigma^m(\cF)\to \Omega^{m+1}\psi(\Sigma^{m+1}\cF)$ is an isomorphism on $H^{-n}$. So we have $H^{-n}(\psi(\cF))\to H^{-n}(\partial\psi(\cF))$ is an isomorphism. Then $\partial\psi=0$ implies that $\psi(\cF)\in\cD^{\leq -n-1}$.
+
+# Pseudo-extensible functor
+Suppose $\cC$ and $\cD$ are in $\StCat_{cont}$ and equipped with $t$-structures compatible with filtered colimits.
+
+$\psi:\cC^{\leq 0}\to\cD^{\leq 0}$ is called extensible if there exists $\widetilde{\psi}:\cC^{\leq 1}\to\cD^{\leq 1}$ commuting with sifted colimits and satisfying $\widetilde{\psi}\|_{\cC^{\leq 0}}=\psi$.
+
+$\psi$ is called pseudo-extensible if:
+
+* $\psi$ is reduced and commutes with sifted colimits
+
+* Let $\cS_\psi \subseteq\Hom(\cC,\cD)$ be the minimal subgroupoid with $\psi\in\cS_\psi$ and $B_\phi(\cF,-)[-1]\in\cS_\psi$ for every $\cF\in\cC^{\leq 0}$ and $\phi\in\cS_\psi$, then every $\phi$ in $\cS_\psi$ maps $\cC^{\leq 0}$ to $\cD^{\leq 0}$
+
+One can deduce the fact that if $\psi$ is extensible then it is also pseudo-extensible. The notion of pseudo-extensible will eventually be used to deduce facts about TC because of the following lemma.
+
+Suppose in addition the $t$-structure on $\cD$ is left complete. Given a filtered category $\cI$ and a diagram $\psi:\cI^{op}\to\Hom(\cC^{\leq 0},\cD^{\leq 0})$ of pseudo-extensible functors. Suppose that for every $n$ there exists $i\in \cI$ such that $\tau^{\geq -n}\psi_j\to \tau^{\geq -n}\psi_i$ is an isomorphism for all $i\to j\in \cI$. Then the value-wise limit $\psi=\lim_{i\in\cI^{op}}\psi_i$ is pseudo-extensible.
+
+# Main theorem, v2
+For the categorical variant of the main theorem, in addition we assume $\psi$ is pseudo-extensible and $\partial(\psi(\cF\oplus -))=0$ for every $\cF\in\cC^{\leq 0}$, then $\psi$ maps $\cC^{\leq 0}$ to $\bigcap_{n>0}\cD^{\leq -n}$.
+
+As a corollary, assume the setting of main theorem v1, in addition suppose $\Psi_{A,red}:A-\bimod^{\leq 0}\to\Sp$ are pseudo-extensible, then $\Psi(A\oplus M)\to\Psi(A)$ is an isomorphism for any $M\in A-\bimod^{\leq 0}$.
+
+# More...
+To prove the DGM theorem in split square-zero case, we need to show $\Psi^{DGM}$ satisfies the hypotheses of the above theorem, this is actually the hard part and we will consider K and TC separately, the following posts will address these results.
