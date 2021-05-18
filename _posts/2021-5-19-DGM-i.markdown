@@ -19,7 +19,33 @@ date:   2021-05-19
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 <div style="display:none">
-
+$
+\newcommand{\K}{\mathrm{K}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\Fun}{\mathrm{Fun}}
+\newcommand{\Fin}{\mathrm{Fin}}
+\newcommand{\Mon}{\mathrm{Mon}}
+\newcommand{\Grp}{\mathrm{Grp}}
+\newcommand{\Kan}{\mathrm{Kan}}
+\newcommand{\Ker}{\mathrm{Ker}}
+\newcommand{\Coker}{\mathrm{Coker}}
+\newcommand{\TC}{\mathrm{TC}}
+\newcommand{\Alg}{\mathrm{Alg}}
+\newcommand{\Sp}{\mathrm{Sp}}
+\newcommand{\bimod}{\mathrm{bimod}}
+\newcommand{\StCat}{\mathrm{StCat}}
+\newcommand{\colim}{\mathrm{colim}}
+\newcommand{\SqZero}{\mathrm{SqZero}}
+\newcommand{\fil}{\mathrm{fil}}
+\newcommand{\gr}{\mathrm{gr}}
+\newcommand{\Hom}{\mathrm{Hom}}
+\renewcommand{\|}{|}
+$
 </div>
 
 **Reference:** [On the Dundas-Goodwillie-McCarthy theorem](https://arxiv.org/pdf/1807.06709.pdf) by Sam Raskin
