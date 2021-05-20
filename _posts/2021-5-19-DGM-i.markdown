@@ -94,7 +94,7 @@ Given $\psi:\cC^{\leq 0}\to \cD$ commuting with sifted colimits. Then for any $\
 
 * One can calculate that $\gr_0\psi(\Sigma\cF)=\psi(0)$, $\gr_1\psi(\Sigma\cF)=\psi_{red}(\cF)[1]$, $\gr_2\psi(\Sigma\cF)=B_{\psi_{red}}(\cF,\cF)[2]$ where $B_\psi(\cF,\cG)=\Coker(\psi(\cF)\oplus\psi(\cG)\to\psi(\cF\oplus\cG))$.
 
-For the proof, first write the geometric realization of $\Sigma\cF$ and use the fact that $\psi$ commutes with geometric realization to see $\psi(\Sigma\cF)=\|\psi(\cF^{\oplus\bullet})\|$. Then define $\fil_i\psi(\Sigma\cF)=\|\psi(\cF^{\oplus\bullet})\|_{\leq i}$. One can use the technique from the proof of Dold-Kan theorem to prove the direct summand part.
+For the proof, first write $\Sigma\cF$ as the geometric realization of $\cF^{\oplus\bullet}$ and use the fact that $\psi$ commutes with geometric realization to see $\psi(\Sigma\cF)=\|\psi(\cF^{\oplus\bullet})\|$. Then define $\fil_i\psi(\Sigma\cF)=\|\psi(\cF^{\oplus\bullet})\|_{\leq i}$. One can use the technique from the proof of Dold-Kan theorem to prove the direct summand part.
 
 Then there is this corollary of the lemma. Suppose $\psi:\cC^{\leq 0}\to\cD^{\leq 0}$ is reduced and commutes with sifted colimits, then for any $n\geq 0$, $\psi(\cC^{\leq -n})\subseteq \cD^{\leq -n}$.
 
